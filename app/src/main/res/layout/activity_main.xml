@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/back"
+    >
+
+    <!-- Layout root -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Icon -->
+        <ImageView
+            android:layout_width="136dp"
+            android:layout_height="107dp"
+            android:layout_gravity="center"
+            android:layout_weight="0."
+            android:adjustViewBounds="true"
+            android:src="@drawable/fleche"
+            android:layout_marginBottom="16dp"
+            />
+
+        <!-- Nom et Prénom -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextNom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Nom"
+                android:layout_marginBottom="16dp"
+
+                />
+
+            <EditText
+                android:id="@+id/editTextPrenom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Prénom"
+                android:layout_marginBottom="16dp"
+                />
+
+        </LinearLayout>
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_marginBottom="16dp"
+            />
+
+        <!-- Mot de passe -->
+        <EditText
+            android:id="@+id/editTextMotDePasse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:layout_marginBottom="16dp"
+            />
+
+        <!-- Confirmer le mot de passe -->
+
+        <!-- Age et genre -->
+        <EditText
+            android:id="@+id/editTextConfirmerMotDePasse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Confirmer le mot de passe"
+            android:inputType="textPassword"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:id="@+id/editTextAge"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Âge"
+                android:inputType="number"
+                android:layout_marginBottom="16dp"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonHomme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Homme"
+                android:buttonTint="@android:color/holo_green_dark"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButtonFemme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Femme"
+                android:buttonTint="@android:color/holo_green_dark"
+                android:layout_marginBottom="16dp"/>
+        </RadioGroup>
+
+        <!-- Bouton Inscription -->
+        <Button
+            android:id="@+id/buttonInscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inscription"
+            android:background="#0000FF" />
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
